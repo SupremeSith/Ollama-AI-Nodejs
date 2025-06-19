@@ -10,7 +10,7 @@ app.post('/ia', async (req, res) => {
   const { text } = req.body;
   try {
     const response = await axios.post('http://localhost:11434/api/generate', {
-      model: 'llama3',
+      model: 'phi3',
       prompt: text,
       stream: false,
     });
